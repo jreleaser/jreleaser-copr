@@ -1,0 +1,4 @@
+= Fedora COPR repository for JReleaser
+
+Repository used by link:https://copr.fedorainfracloud.org/coprs/aalmiray/jreleaser/[Fedora COPR] to provide
+a Linux package based install of link:https://jreleaser.org[JReleaser].
