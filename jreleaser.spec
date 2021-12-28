@@ -1,11 +1,12 @@
+# Generated with JReleaser 0.10.0-SNAPSHOT at 2021-12-28T14:52:05.57129Z
 Name:      jreleaser
-Version:   0.9.1
+Version:   0.10.0
 Release:   1%{?dist}
 Summary:   Release projects quickly and easily with JReleaser
 
 License:   Apache-2.0
 URL:       https://jreleaser.org
-Source0:   https://github.com/jreleaser/jreleaser/releases/download/v0.9.1/jreleaser-0.9.1.tar
+Source0:   https://github.com/jreleaser/jreleaser/releases/download/v0.10.0/jreleaser-0.10.0.tar
 
 BuildArch: noarch
 Requires:  java
@@ -41,22 +42,23 @@ install -p -m 755 bin/jreleaser %{_appdir}/bin/jreleaser
 install -p -m 644 VERSION %{_appdir}/VERSION
 install -p -m 644 lib/JavaEWAH-1.1.12.jar %{_appdir}/lib/JavaEWAH-1.1.12.jar
 install -p -m 644 lib/artifactory-java-sdk-%{version}.jar %{_appdir}/lib/artifactory-java-sdk-%{version}.jar
-install -p -m 644 lib/aws-java-sdk-core-1.12.124.jar %{_appdir}/lib/aws-java-sdk-core-1.12.124.jar
-install -p -m 644 lib/aws-java-sdk-kms-1.12.124.jar %{_appdir}/lib/aws-java-sdk-kms-1.12.124.jar
-install -p -m 644 lib/aws-java-sdk-s3-1.12.124.jar %{_appdir}/lib/aws-java-sdk-s3-1.12.124.jar
+install -p -m 644 lib/aws-java-sdk-core-1.12.131.jar %{_appdir}/lib/aws-java-sdk-core-1.12.131.jar
+install -p -m 644 lib/aws-java-sdk-kms-1.12.131.jar %{_appdir}/lib/aws-java-sdk-kms-1.12.131.jar
+install -p -m 644 lib/aws-java-sdk-s3-1.12.131.jar %{_appdir}/lib/aws-java-sdk-s3-1.12.131.jar
 install -p -m 644 lib/bcpg-jdk15on-1.68.jar %{_appdir}/lib/bcpg-jdk15on-1.68.jar
 install -p -m 644 lib/bcprov-jdk15on-1.68.jar %{_appdir}/lib/bcprov-jdk15on-1.68.jar
+install -p -m 644 lib/classmate-1.5.1.jar %{_appdir}/lib/classmate-1.5.1.jar
 install -p -m 644 lib/codeberg-java-sdk-%{version}.jar %{_appdir}/lib/codeberg-java-sdk-%{version}.jar
 install -p -m 644 lib/commons-codec-1.15.jar %{_appdir}/lib/commons-codec-1.15.jar
 install -p -m 644 lib/commons-compress-1.21.jar %{_appdir}/lib/commons-compress-1.21.jar
 install -p -m 644 lib/commons-io-2.11.0.jar %{_appdir}/lib/commons-io-2.11.0.jar
 install -p -m 644 lib/commons-lang3-3.12.0.jar %{_appdir}/lib/commons-lang3-3.12.0.jar
-install -p -m 644 lib/compiler-%{version}0.jar %{_appdir}/lib/compiler-%{version}0.jar
+install -p -m 644 lib/compiler-0.9.10.jar %{_appdir}/lib/compiler-0.9.10.jar
 install -p -m 644 lib/discord-java-sdk-%{version}.jar %{_appdir}/lib/discord-java-sdk-%{version}.jar
-install -p -m 644 lib/feign-core-11.7.jar %{_appdir}/lib/feign-core-11.7.jar
+install -p -m 644 lib/feign-core-11.8.jar %{_appdir}/lib/feign-core-11.8.jar
 install -p -m 644 lib/feign-form-3.8.0.jar %{_appdir}/lib/feign-form-3.8.0.jar
-install -p -m 644 lib/feign-httpclient-11.7.jar %{_appdir}/lib/feign-httpclient-11.7.jar
-install -p -m 644 lib/feign-jackson-11.7.jar %{_appdir}/lib/feign-jackson-11.7.jar
+install -p -m 644 lib/feign-httpclient-11.8.jar %{_appdir}/lib/feign-httpclient-11.8.jar
+install -p -m 644 lib/feign-jackson-11.8.jar %{_appdir}/lib/feign-jackson-11.8.jar
 install -p -m 644 lib/genericgit-java-sdk-%{version}.jar %{_appdir}/lib/genericgit-java-sdk-%{version}.jar
 install -p -m 644 lib/git-sdk-%{version}.jar %{_appdir}/lib/git-sdk-%{version}.jar
 install -p -m 644 lib/gitea-java-sdk-%{version}.jar %{_appdir}/lib/gitea-java-sdk-%{version}.jar
@@ -69,17 +71,17 @@ install -p -m 644 lib/http-upload-java-sdk-%{version}.jar %{_appdir}/lib/http-up
 install -p -m 644 lib/httpclient-4.5.13.jar %{_appdir}/lib/httpclient-4.5.13.jar
 install -p -m 644 lib/httpcore-4.4.13.jar %{_appdir}/lib/httpcore-4.4.13.jar
 install -p -m 644 lib/ion-java-1.0.2.jar %{_appdir}/lib/ion-java-1.0.2.jar
-install -p -m 644 lib/jackson-annotations-2.13.0.jar %{_appdir}/lib/jackson-annotations-2.13.0.jar
-install -p -m 644 lib/jackson-core-2.13.0.jar %{_appdir}/lib/jackson-core-2.13.0.jar
-install -p -m 644 lib/jackson-databind-2.13.0.jar %{_appdir}/lib/jackson-databind-2.13.0.jar
-install -p -m 644 lib/jackson-dataformat-cbor-2.13.0.jar %{_appdir}/lib/jackson-dataformat-cbor-2.13.0.jar
-install -p -m 644 lib/jackson-dataformat-toml-2.13.0.jar %{_appdir}/lib/jackson-dataformat-toml-2.13.0.jar
-install -p -m 644 lib/jackson-dataformat-yaml-2.13.0.jar %{_appdir}/lib/jackson-dataformat-yaml-2.13.0.jar
+install -p -m 644 lib/jackson-annotations-2.13.1.jar %{_appdir}/lib/jackson-annotations-2.13.1.jar
+install -p -m 644 lib/jackson-core-2.13.1.jar %{_appdir}/lib/jackson-core-2.13.1.jar
+install -p -m 644 lib/jackson-databind-2.13.1.jar %{_appdir}/lib/jackson-databind-2.13.1.jar
+install -p -m 644 lib/jackson-dataformat-cbor-2.13.1.jar %{_appdir}/lib/jackson-dataformat-cbor-2.13.1.jar
+install -p -m 644 lib/jackson-dataformat-toml-2.13.1.jar %{_appdir}/lib/jackson-dataformat-toml-2.13.1.jar
+install -p -m 644 lib/jackson-dataformat-yaml-2.13.1.jar %{_appdir}/lib/jackson-dataformat-yaml-2.13.1.jar
 install -p -m 644 lib/jakarta.activation-2.0.1.jar %{_appdir}/lib/jakarta.activation-2.0.1.jar
 install -p -m 644 lib/jakarta.mail-2.0.1.jar %{_appdir}/lib/jakarta.mail-2.0.1.jar
 install -p -m 644 lib/java-sdk-commons-%{version}.jar %{_appdir}/lib/java-sdk-commons-%{version}.jar
 install -p -m 644 lib/jcl-over-slf4j-1.7.32.jar %{_appdir}/lib/jcl-over-slf4j-1.7.32.jar
-install -p -m 644 lib/jmespath-java-1.12.124.jar %{_appdir}/lib/jmespath-java-1.12.124.jar
+install -p -m 644 lib/jmespath-java-1.12.131.jar %{_appdir}/lib/jmespath-java-1.12.131.jar
 install -p -m 644 lib/joda-time-2.8.1.jar %{_appdir}/lib/joda-time-2.8.1.jar
 install -p -m 644 lib/jreleaser-%{version}.jar %{_appdir}/lib/jreleaser-%{version}.jar
 install -p -m 644 lib/jreleaser-assemblers-%{version}.jar %{_appdir}/lib/jreleaser-assemblers-%{version}.jar
@@ -92,6 +94,8 @@ install -p -m 644 lib/jreleaser-templates-%{version}.jar %{_appdir}/lib/jrelease
 install -p -m 644 lib/jreleaser-tools-%{version}.jar %{_appdir}/lib/jreleaser-tools-%{version}.jar
 install -p -m 644 lib/jreleaser-utils-%{version}.jar %{_appdir}/lib/jreleaser-utils-%{version}.jar
 install -p -m 644 lib/jreleaser-workflow-%{version}.jar %{_appdir}/lib/jreleaser-workflow-%{version}.jar
+install -p -m 644 lib/jsonschema-generator-4.21.0.jar %{_appdir}/lib/jsonschema-generator-4.21.0.jar
+install -p -m 644 lib/jsonschema-module-jackson-4.21.0.jar %{_appdir}/lib/jsonschema-module-jackson-4.21.0.jar
 install -p -m 644 lib/mail-java-sdk-%{version}.jar %{_appdir}/lib/mail-java-sdk-%{version}.jar
 install -p -m 644 lib/mastodon-java-sdk-%{version}.jar %{_appdir}/lib/mastodon-java-sdk-%{version}.jar
 install -p -m 644 lib/mattermost-java-sdk-%{version}.jar %{_appdir}/lib/mattermost-java-sdk-%{version}.jar
@@ -106,7 +110,7 @@ install -p -m 644 lib/slf4j-simple-1.7.32.jar %{_appdir}/lib/slf4j-simple-1.7.32
 install -p -m 644 lib/snakeyaml-1.29.jar %{_appdir}/lib/snakeyaml-1.29.jar
 install -p -m 644 lib/teams-java-sdk-%{version}.jar %{_appdir}/lib/teams-java-sdk-%{version}.jar
 install -p -m 644 lib/telegram-java-sdk-%{version}.jar %{_appdir}/lib/telegram-java-sdk-%{version}.jar
-install -p -m 644 lib/tika-core-2.1.0.jar %{_appdir}/lib/tika-core-2.1.0.jar
+install -p -m 644 lib/tika-core-2.2.1.jar %{_appdir}/lib/tika-core-2.2.1.jar
 install -p -m 644 lib/twitter-java-sdk-%{version}.jar %{_appdir}/lib/twitter-java-sdk-%{version}.jar
 install -p -m 644 lib/twitter4j-core-4.0.7.jar %{_appdir}/lib/twitter4j-core-4.0.7.jar
 install -p -m 644 lib/webhooks-java-sdk-%{version}.jar %{_appdir}/lib/webhooks-java-sdk-%{version}.jar
@@ -120,22 +124,23 @@ install -p -m 644 lib/zulip-java-sdk-%{version}.jar %{_appdir}/lib/zulip-java-sd
 %{_datadir}/%{name}/VERSION
 %{_datadir}/%{name}/lib/JavaEWAH-1.1.12.jar
 %{_datadir}/%{name}/lib/artifactory-java-sdk-%{version}.jar
-%{_datadir}/%{name}/lib/aws-java-sdk-core-1.12.124.jar
-%{_datadir}/%{name}/lib/aws-java-sdk-kms-1.12.124.jar
-%{_datadir}/%{name}/lib/aws-java-sdk-s3-1.12.124.jar
+%{_datadir}/%{name}/lib/aws-java-sdk-core-1.12.131.jar
+%{_datadir}/%{name}/lib/aws-java-sdk-kms-1.12.131.jar
+%{_datadir}/%{name}/lib/aws-java-sdk-s3-1.12.131.jar
 %{_datadir}/%{name}/lib/bcpg-jdk15on-1.68.jar
 %{_datadir}/%{name}/lib/bcprov-jdk15on-1.68.jar
+%{_datadir}/%{name}/lib/classmate-1.5.1.jar
 %{_datadir}/%{name}/lib/codeberg-java-sdk-%{version}.jar
 %{_datadir}/%{name}/lib/commons-codec-1.15.jar
 %{_datadir}/%{name}/lib/commons-compress-1.21.jar
 %{_datadir}/%{name}/lib/commons-io-2.11.0.jar
 %{_datadir}/%{name}/lib/commons-lang3-3.12.0.jar
-%{_datadir}/%{name}/lib/compiler-%{version}0.jar
+%{_datadir}/%{name}/lib/compiler-0.9.10.jar
 %{_datadir}/%{name}/lib/discord-java-sdk-%{version}.jar
-%{_datadir}/%{name}/lib/feign-core-11.7.jar
+%{_datadir}/%{name}/lib/feign-core-11.8.jar
 %{_datadir}/%{name}/lib/feign-form-3.8.0.jar
-%{_datadir}/%{name}/lib/feign-httpclient-11.7.jar
-%{_datadir}/%{name}/lib/feign-jackson-11.7.jar
+%{_datadir}/%{name}/lib/feign-httpclient-11.8.jar
+%{_datadir}/%{name}/lib/feign-jackson-11.8.jar
 %{_datadir}/%{name}/lib/genericgit-java-sdk-%{version}.jar
 %{_datadir}/%{name}/lib/git-sdk-%{version}.jar
 %{_datadir}/%{name}/lib/gitea-java-sdk-%{version}.jar
@@ -148,17 +153,17 @@ install -p -m 644 lib/zulip-java-sdk-%{version}.jar %{_appdir}/lib/zulip-java-sd
 %{_datadir}/%{name}/lib/httpclient-4.5.13.jar
 %{_datadir}/%{name}/lib/httpcore-4.4.13.jar
 %{_datadir}/%{name}/lib/ion-java-1.0.2.jar
-%{_datadir}/%{name}/lib/jackson-annotations-2.13.0.jar
-%{_datadir}/%{name}/lib/jackson-core-2.13.0.jar
-%{_datadir}/%{name}/lib/jackson-databind-2.13.0.jar
-%{_datadir}/%{name}/lib/jackson-dataformat-cbor-2.13.0.jar
-%{_datadir}/%{name}/lib/jackson-dataformat-toml-2.13.0.jar
-%{_datadir}/%{name}/lib/jackson-dataformat-yaml-2.13.0.jar
+%{_datadir}/%{name}/lib/jackson-annotations-2.13.1.jar
+%{_datadir}/%{name}/lib/jackson-core-2.13.1.jar
+%{_datadir}/%{name}/lib/jackson-databind-2.13.1.jar
+%{_datadir}/%{name}/lib/jackson-dataformat-cbor-2.13.1.jar
+%{_datadir}/%{name}/lib/jackson-dataformat-toml-2.13.1.jar
+%{_datadir}/%{name}/lib/jackson-dataformat-yaml-2.13.1.jar
 %{_datadir}/%{name}/lib/jakarta.activation-2.0.1.jar
 %{_datadir}/%{name}/lib/jakarta.mail-2.0.1.jar
 %{_datadir}/%{name}/lib/java-sdk-commons-%{version}.jar
 %{_datadir}/%{name}/lib/jcl-over-slf4j-1.7.32.jar
-%{_datadir}/%{name}/lib/jmespath-java-1.12.124.jar
+%{_datadir}/%{name}/lib/jmespath-java-1.12.131.jar
 %{_datadir}/%{name}/lib/joda-time-2.8.1.jar
 %{_datadir}/%{name}/lib/jreleaser-%{version}.jar
 %{_datadir}/%{name}/lib/jreleaser-assemblers-%{version}.jar
@@ -171,6 +176,8 @@ install -p -m 644 lib/zulip-java-sdk-%{version}.jar %{_appdir}/lib/zulip-java-sd
 %{_datadir}/%{name}/lib/jreleaser-tools-%{version}.jar
 %{_datadir}/%{name}/lib/jreleaser-utils-%{version}.jar
 %{_datadir}/%{name}/lib/jreleaser-workflow-%{version}.jar
+%{_datadir}/%{name}/lib/jsonschema-generator-4.21.0.jar
+%{_datadir}/%{name}/lib/jsonschema-module-jackson-4.21.0.jar
 %{_datadir}/%{name}/lib/mail-java-sdk-%{version}.jar
 %{_datadir}/%{name}/lib/mastodon-java-sdk-%{version}.jar
 %{_datadir}/%{name}/lib/mattermost-java-sdk-%{version}.jar
@@ -185,7 +192,7 @@ install -p -m 644 lib/zulip-java-sdk-%{version}.jar %{_appdir}/lib/zulip-java-sd
 %{_datadir}/%{name}/lib/snakeyaml-1.29.jar
 %{_datadir}/%{name}/lib/teams-java-sdk-%{version}.jar
 %{_datadir}/%{name}/lib/telegram-java-sdk-%{version}.jar
-%{_datadir}/%{name}/lib/tika-core-2.1.0.jar
+%{_datadir}/%{name}/lib/tika-core-2.2.1.jar
 %{_datadir}/%{name}/lib/twitter-java-sdk-%{version}.jar
 %{_datadir}/%{name}/lib/twitter4j-core-4.0.7.jar
 %{_datadir}/%{name}/lib/webhooks-java-sdk-%{version}.jar
