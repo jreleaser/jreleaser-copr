@@ -1,6 +1,6 @@
 # Generated with JReleaser 1.0.0-SNAPSHOT at 2022-01-22T09:46:39.196814Z
 Name:      jreleaser
-Version:   1.0.0.M1
+Version:   1.0.0~M1
 Release:   1%{?dist}
 Summary:   Release projects quickly and easily with JReleaser
 
@@ -24,7 +24,7 @@ may be announced in a variety of channels such as Twitter, Zulip, SDKMAN!, and m
 
 
 %prep
-%setup -q
+%setup -q -n jreleaser-1.0.0-M1
 
 %install
 mkdir -p %{buildroot}%{_bindir}
