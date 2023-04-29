@@ -37,257 +37,258 @@ cat > %{buildroot}%{_bindir}/jreleaser <<-EOF
 EOF
 chmod 0755 %{buildroot}%{_bindir}/jreleaser
 
-mkdir -p %{_appdir}/releaser-1.6.0
-install -p -m 755 releaser-1.6.0/bin/jreleaser %{_appdir}/releaser-1.6.0/bin/jreleaser
-install -p -m 644 releaser-1.6.0/LICENSE %{_appdir}/releaser-1.6.0/LICENSE
-install -p -m 644 releaser-1.6.0/NOTICE %{_appdir}/releaser-1.6.0/NOTICE
-install -p -m 644 releaser-1.6.0/VERSION %{_appdir}/releaser-1.6.0/VERSION
-install -p -m 644 releaser-1.6.0/lib/JavaEWAH-1.2.3.jar %{_appdir}/releaser-1.6.0/lib/JavaEWAH-1.2.3.jar
-install -p -m 644 releaser-1.6.0/lib/annotations-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/annotations-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/apache-client-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/apache-client-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/arns-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/arns-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/asn-one-0.6.0.jar %{_appdir}/releaser-1.6.0/lib/asn-one-0.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/auth-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/auth-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/aws-core-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/aws-core-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/aws-query-protocol-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/aws-query-protocol-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/aws-xml-protocol-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/aws-xml-protocol-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/bcpg-jdk15on-1.70.jar %{_appdir}/releaser-1.6.0/lib/bcpg-jdk15on-1.70.jar
-install -p -m 644 releaser-1.6.0/lib/bcpkix-jdk15on-1.70.jar %{_appdir}/releaser-1.6.0/lib/bcpkix-jdk15on-1.70.jar
-install -p -m 644 releaser-1.6.0/lib/bcprov-jdk15on-1.70.jar %{_appdir}/releaser-1.6.0/lib/bcprov-jdk15on-1.70.jar
-install -p -m 644 releaser-1.6.0/lib/bcutil-jdk15on-1.70.jar %{_appdir}/releaser-1.6.0/lib/bcutil-jdk15on-1.70.jar
-install -p -m 644 releaser-1.6.0/lib/classmate-1.5.1.jar %{_appdir}/releaser-1.6.0/lib/classmate-1.5.1.jar
-install -p -m 644 releaser-1.6.0/lib/commonmark-0.21.0.jar %{_appdir}/releaser-1.6.0/lib/commonmark-0.21.0.jar
-install -p -m 644 releaser-1.6.0/lib/commons-codec-1.15.jar %{_appdir}/releaser-1.6.0/lib/commons-codec-1.15.jar
-install -p -m 644 releaser-1.6.0/lib/commons-compress-1.22.jar %{_appdir}/releaser-1.6.0/lib/commons-compress-1.22.jar
-install -p -m 644 releaser-1.6.0/lib/commons-io-2.11.0.jar %{_appdir}/releaser-1.6.0/lib/commons-io-2.11.0.jar
-install -p -m 644 releaser-1.6.0/lib/commons-jexl3-3.3.jar %{_appdir}/releaser-1.6.0/lib/commons-jexl3-3.3.jar
-install -p -m 644 releaser-1.6.0/lib/commons-lang3-3.12.0.jar %{_appdir}/releaser-1.6.0/lib/commons-lang3-3.12.0.jar
-install -p -m 644 releaser-1.6.0/lib/commons-net-3.9.0.jar %{_appdir}/releaser-1.6.0/lib/commons-net-3.9.0.jar
-install -p -m 644 releaser-1.6.0/lib/commons-text-1.10.0.jar %{_appdir}/releaser-1.6.0/lib/commons-text-1.10.0.jar
-install -p -m 644 releaser-1.6.0/lib/compiler-0.9.10.jar %{_appdir}/releaser-1.6.0/lib/compiler-0.9.10.jar
-install -p -m 644 releaser-1.6.0/lib/crt-core-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/crt-core-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/eddsa-0.3.0.jar %{_appdir}/releaser-1.6.0/lib/eddsa-0.3.0.jar
-install -p -m 644 releaser-1.6.0/lib/endpoints-spi-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/endpoints-spi-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/eventstream-1.0.1.jar %{_appdir}/releaser-1.6.0/lib/eventstream-1.0.1.jar
-install -p -m 644 releaser-1.6.0/lib/failsafe-3.3.1.jar %{_appdir}/releaser-1.6.0/lib/failsafe-3.3.1.jar
-install -p -m 644 releaser-1.6.0/lib/feign-core-12.3.jar %{_appdir}/releaser-1.6.0/lib/feign-core-12.3.jar
-install -p -m 644 releaser-1.6.0/lib/feign-form-3.8.0.jar %{_appdir}/releaser-1.6.0/lib/feign-form-3.8.0.jar
-install -p -m 644 releaser-1.6.0/lib/feign-httpclient-12.3.jar %{_appdir}/releaser-1.6.0/lib/feign-httpclient-12.3.jar
-install -p -m 644 releaser-1.6.0/lib/feign-jackson-12.3.jar %{_appdir}/releaser-1.6.0/lib/feign-jackson-12.3.jar
-install -p -m 644 releaser-1.6.0/lib/http-client-spi-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/http-client-spi-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/httpclient-4.5.13.jar %{_appdir}/releaser-1.6.0/lib/httpclient-4.5.13.jar
-install -p -m 644 releaser-1.6.0/lib/httpcore-4.4.16.jar %{_appdir}/releaser-1.6.0/lib/httpcore-4.4.16.jar
-install -p -m 644 releaser-1.6.0/lib/jackson-annotations-2.14.2.jar %{_appdir}/releaser-1.6.0/lib/jackson-annotations-2.14.2.jar
-install -p -m 644 releaser-1.6.0/lib/jackson-core-2.14.2.jar %{_appdir}/releaser-1.6.0/lib/jackson-core-2.14.2.jar
-install -p -m 644 releaser-1.6.0/lib/jackson-databind-2.14.2.jar %{_appdir}/releaser-1.6.0/lib/jackson-databind-2.14.2.jar
-install -p -m 644 releaser-1.6.0/lib/jackson-dataformat-toml-2.14.2.jar %{_appdir}/releaser-1.6.0/lib/jackson-dataformat-toml-2.14.2.jar
-install -p -m 644 releaser-1.6.0/lib/jackson-dataformat-xml-2.14.2.jar %{_appdir}/releaser-1.6.0/lib/jackson-dataformat-xml-2.14.2.jar
-install -p -m 644 releaser-1.6.0/lib/jackson-dataformat-yaml-2.14.2.jar %{_appdir}/releaser-1.6.0/lib/jackson-dataformat-yaml-2.14.2.jar
-install -p -m 644 releaser-1.6.0/lib/jakarta.activation-2.0.1.jar %{_appdir}/releaser-1.6.0/lib/jakarta.activation-2.0.1.jar
-install -p -m 644 releaser-1.6.0/lib/jakarta.mail-2.0.1.jar %{_appdir}/releaser-1.6.0/lib/jakarta.mail-2.0.1.jar
-install -p -m 644 releaser-1.6.0/lib/jcl-over-slf4j-2.0.7.jar %{_appdir}/releaser-1.6.0/lib/jcl-over-slf4j-2.0.7.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-artifactory-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-artifactory-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-azure-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-azure-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-codeberg-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-codeberg-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-command-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-command-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-config-json-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-config-json-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-config-toml-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-config-toml-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-config-yaml-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-config-yaml-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-discord-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-discord-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-discourse-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-discourse-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-engine-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-engine-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-ftp-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-ftp-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-genericgit-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-genericgit-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-git-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-git-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-gitea-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-gitea-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-github-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-github-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-gitlab-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-gitlab-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-gitter-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-gitter-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-google-chat-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-google-chat-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-http-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-http-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-java-sdk-commons-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-java-sdk-commons-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-linkedin-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-linkedin-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-logger-api-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-logger-api-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-mastodon-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-mastodon-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-mattermost-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-mattermost-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-model-api-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-model-api-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-model-impl-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-model-impl-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-nexus2-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-nexus2-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-opencollective-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-opencollective-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-resource-bundle-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-resource-bundle-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-s3-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-s3-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-sdkman-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-sdkman-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-signing-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-signing-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-slack-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-slack-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-smtp-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-smtp-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-ssh-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-ssh-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-teams-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-teams-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-telegram-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-telegram-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-templates-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-templates-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-tool-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-tool-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-twitter-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-twitter-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-utils-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-utils-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-webhooks-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-webhooks-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/jreleaser-zulip-java-sdk-1.6.0.jar %{_appdir}/releaser-1.6.0/lib/jreleaser-zulip-java-sdk-1.6.0.jar
-install -p -m 644 releaser-1.6.0/lib/json-utils-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/json-utils-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/jsonschema-generator-4.31.0.jar %{_appdir}/releaser-1.6.0/lib/jsonschema-generator-4.31.0.jar
-install -p -m 644 releaser-1.6.0/lib/jsonschema-module-jackson-4.31.0.jar %{_appdir}/releaser-1.6.0/lib/jsonschema-module-jackson-4.31.0.jar
-install -p -m 644 releaser-1.6.0/lib/jzlib-1.1.3.jar %{_appdir}/releaser-1.6.0/lib/jzlib-1.1.3.jar
-install -p -m 644 releaser-1.6.0/lib/metrics-spi-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/metrics-spi-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/org.eclipse.jgit-5.13.0.202109080827-r.jar %{_appdir}/releaser-1.6.0/lib/org.eclipse.jgit-5.13.0.202109080827-r.jar
-install -p -m 644 releaser-1.6.0/lib/picocli-4.7.3.jar %{_appdir}/releaser-1.6.0/lib/picocli-4.7.3.jar
-install -p -m 644 releaser-1.6.0/lib/profiles-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/profiles-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/protocol-core-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/protocol-core-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/reactive-streams-1.0.3.jar %{_appdir}/releaser-1.6.0/lib/reactive-streams-1.0.3.jar
-install -p -m 644 releaser-1.6.0/lib/regions-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/regions-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/s3-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/s3-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/sdk-core-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/sdk-core-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/slf4j-api-2.0.7.jar %{_appdir}/releaser-1.6.0/lib/slf4j-api-2.0.7.jar
-install -p -m 644 releaser-1.6.0/lib/slf4j-simple-2.0.7.jar %{_appdir}/releaser-1.6.0/lib/slf4j-simple-2.0.7.jar
-install -p -m 644 releaser-1.6.0/lib/snakeyaml-1.33.jar %{_appdir}/releaser-1.6.0/lib/snakeyaml-1.33.jar
-install -p -m 644 releaser-1.6.0/lib/sshj-0.35.0.jar %{_appdir}/releaser-1.6.0/lib/sshj-0.35.0.jar
-install -p -m 644 releaser-1.6.0/lib/stax2-api-4.2.1.jar %{_appdir}/releaser-1.6.0/lib/stax2-api-4.2.1.jar
-install -p -m 644 releaser-1.6.0/lib/third-party-jackson-core-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/third-party-jackson-core-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/tika-core-2.7.0.jar %{_appdir}/releaser-1.6.0/lib/tika-core-2.7.0.jar
-install -p -m 644 releaser-1.6.0/lib/twitter4j-core-4.1.2.jar %{_appdir}/releaser-1.6.0/lib/twitter4j-core-4.1.2.jar
-install -p -m 644 releaser-1.6.0/lib/utils-2.20.51.jar %{_appdir}/releaser-1.6.0/lib/utils-2.20.51.jar
-install -p -m 644 releaser-1.6.0/lib/woodstox-core-6.5.0.jar %{_appdir}/releaser-1.6.0/lib/woodstox-core-6.5.0.jar
-install -p -m 644 releaser-1.6.0/lib/xz-1.9.jar %{_appdir}/releaser-1.6.0/lib/xz-1.9.jar
-install -p -m 644 releaser-1.6.0/lib/yamllint-1.5.0.jar %{_appdir}/releaser-1.6.0/lib/yamllint-1.5.0.jar
-install -p -m 644 releaser-1.6.0/lib/zstd-jni-1.5.4-1.jar %{_appdir}/releaser-1.6.0/lib/zstd-jni-1.5.4-1.jar
-install -p -m 644 releaser-1.6.0/licenses/LICENSE-BSD-2-Clause %{_appdir}/releaser-1.6.0/licenses/LICENSE-BSD-2-Clause
-install -p -m 644 releaser-1.6.0/licenses/LICENSE-BSD-2-Clause-FreeBSD %{_appdir}/releaser-1.6.0/licenses/LICENSE-BSD-2-Clause-FreeBSD
-install -p -m 644 releaser-1.6.0/licenses/LICENSE-Bouncy-Castle %{_appdir}/releaser-1.6.0/licenses/LICENSE-Bouncy-Castle
-install -p -m 644 releaser-1.6.0/licenses/LICENSE-CC0 %{_appdir}/releaser-1.6.0/licenses/LICENSE-CC0
-install -p -m 644 releaser-1.6.0/licenses/LICENSE-EDL-1.0 %{_appdir}/releaser-1.6.0/licenses/LICENSE-EDL-1.0
-install -p -m 644 releaser-1.6.0/licenses/LICENSE-MIT %{_appdir}/releaser-1.6.0/licenses/LICENSE-MIT
-install -p -m 644 releaser-1.6.0/licenses/LICENSE-jzlib %{_appdir}/releaser-1.6.0/licenses/LICENSE-jzlib
+mkdir -p %{_appdir}/lib
+mkdir -p %{_appdir}/licenses
+install -p -m 755 releaser-1.6.0/bin/jreleaser %{_appdir}/bin/jreleaser
+install -p -m 644 LICENSE %{_appdir}/LICENSE
+install -p -m 644 NOTICE %{_appdir}/NOTICE
+install -p -m 644 VERSION %{_appdir}/VERSION
+install -p -m 644 lib/JavaEWAH-1.2.3.jar %{_appdir}/lib/JavaEWAH-1.2.3.jar
+install -p -m 644 lib/annotations-2.20.51.jar %{_appdir}/lib/annotations-2.20.51.jar
+install -p -m 644 lib/apache-client-2.20.51.jar %{_appdir}/lib/apache-client-2.20.51.jar
+install -p -m 644 lib/arns-2.20.51.jar %{_appdir}/lib/arns-2.20.51.jar
+install -p -m 644 lib/asn-one-0.6.0.jar %{_appdir}/lib/asn-one-0.6.0.jar
+install -p -m 644 lib/auth-2.20.51.jar %{_appdir}/lib/auth-2.20.51.jar
+install -p -m 644 lib/aws-core-2.20.51.jar %{_appdir}/lib/aws-core-2.20.51.jar
+install -p -m 644 lib/aws-query-protocol-2.20.51.jar %{_appdir}/lib/aws-query-protocol-2.20.51.jar
+install -p -m 644 lib/aws-xml-protocol-2.20.51.jar %{_appdir}/lib/aws-xml-protocol-2.20.51.jar
+install -p -m 644 lib/bcpg-jdk15on-1.70.jar %{_appdir}/lib/bcpg-jdk15on-1.70.jar
+install -p -m 644 lib/bcpkix-jdk15on-1.70.jar %{_appdir}/lib/bcpkix-jdk15on-1.70.jar
+install -p -m 644 lib/bcprov-jdk15on-1.70.jar %{_appdir}/lib/bcprov-jdk15on-1.70.jar
+install -p -m 644 lib/bcutil-jdk15on-1.70.jar %{_appdir}/lib/bcutil-jdk15on-1.70.jar
+install -p -m 644 lib/classmate-1.5.1.jar %{_appdir}/lib/classmate-1.5.1.jar
+install -p -m 644 lib/commonmark-0.21.0.jar %{_appdir}/lib/commonmark-0.21.0.jar
+install -p -m 644 lib/commons-codec-1.15.jar %{_appdir}/lib/commons-codec-1.15.jar
+install -p -m 644 lib/commons-compress-1.22.jar %{_appdir}/lib/commons-compress-1.22.jar
+install -p -m 644 lib/commons-io-2.11.0.jar %{_appdir}/lib/commons-io-2.11.0.jar
+install -p -m 644 lib/commons-jexl3-3.3.jar %{_appdir}/lib/commons-jexl3-3.3.jar
+install -p -m 644 lib/commons-lang3-3.12.0.jar %{_appdir}/lib/commons-lang3-3.12.0.jar
+install -p -m 644 lib/commons-net-3.9.0.jar %{_appdir}/lib/commons-net-3.9.0.jar
+install -p -m 644 lib/commons-text-1.10.0.jar %{_appdir}/lib/commons-text-1.10.0.jar
+install -p -m 644 lib/compiler-0.9.10.jar %{_appdir}/lib/compiler-0.9.10.jar
+install -p -m 644 lib/crt-core-2.20.51.jar %{_appdir}/lib/crt-core-2.20.51.jar
+install -p -m 644 lib/eddsa-0.3.0.jar %{_appdir}/lib/eddsa-0.3.0.jar
+install -p -m 644 lib/endpoints-spi-2.20.51.jar %{_appdir}/lib/endpoints-spi-2.20.51.jar
+install -p -m 644 lib/eventstream-1.0.1.jar %{_appdir}/lib/eventstream-1.0.1.jar
+install -p -m 644 lib/failsafe-3.3.1.jar %{_appdir}/lib/failsafe-3.3.1.jar
+install -p -m 644 lib/feign-core-12.3.jar %{_appdir}/lib/feign-core-12.3.jar
+install -p -m 644 lib/feign-form-3.8.0.jar %{_appdir}/lib/feign-form-3.8.0.jar
+install -p -m 644 lib/feign-httpclient-12.3.jar %{_appdir}/lib/feign-httpclient-12.3.jar
+install -p -m 644 lib/feign-jackson-12.3.jar %{_appdir}/lib/feign-jackson-12.3.jar
+install -p -m 644 lib/http-client-spi-2.20.51.jar %{_appdir}/lib/http-client-spi-2.20.51.jar
+install -p -m 644 lib/httpclient-4.5.13.jar %{_appdir}/lib/httpclient-4.5.13.jar
+install -p -m 644 lib/httpcore-4.4.16.jar %{_appdir}/lib/httpcore-4.4.16.jar
+install -p -m 644 lib/jackson-annotations-2.14.2.jar %{_appdir}/lib/jackson-annotations-2.14.2.jar
+install -p -m 644 lib/jackson-core-2.14.2.jar %{_appdir}/lib/jackson-core-2.14.2.jar
+install -p -m 644 lib/jackson-databind-2.14.2.jar %{_appdir}/lib/jackson-databind-2.14.2.jar
+install -p -m 644 lib/jackson-dataformat-toml-2.14.2.jar %{_appdir}/lib/jackson-dataformat-toml-2.14.2.jar
+install -p -m 644 lib/jackson-dataformat-xml-2.14.2.jar %{_appdir}/lib/jackson-dataformat-xml-2.14.2.jar
+install -p -m 644 lib/jackson-dataformat-yaml-2.14.2.jar %{_appdir}/lib/jackson-dataformat-yaml-2.14.2.jar
+install -p -m 644 lib/jakarta.activation-2.0.1.jar %{_appdir}/lib/jakarta.activation-2.0.1.jar
+install -p -m 644 lib/jakarta.mail-2.0.1.jar %{_appdir}/lib/jakarta.mail-2.0.1.jar
+install -p -m 644 lib/jcl-over-slf4j-2.0.7.jar %{_appdir}/lib/jcl-over-slf4j-2.0.7.jar
+install -p -m 644 lib/jreleaser-1.6.0.jar %{_appdir}/lib/jreleaser-1.6.0.jar
+install -p -m 644 lib/jreleaser-artifactory-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-artifactory-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-azure-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-azure-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-codeberg-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-codeberg-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-command-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-command-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-config-json-1.6.0.jar %{_appdir}/lib/jreleaser-config-json-1.6.0.jar
+install -p -m 644 lib/jreleaser-config-toml-1.6.0.jar %{_appdir}/lib/jreleaser-config-toml-1.6.0.jar
+install -p -m 644 lib/jreleaser-config-yaml-1.6.0.jar %{_appdir}/lib/jreleaser-config-yaml-1.6.0.jar
+install -p -m 644 lib/jreleaser-discord-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-discord-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-discourse-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-discourse-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-engine-1.6.0.jar %{_appdir}/lib/jreleaser-engine-1.6.0.jar
+install -p -m 644 lib/jreleaser-ftp-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-ftp-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-genericgit-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-genericgit-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-git-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-git-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-gitea-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-gitea-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-github-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-github-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-gitlab-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-gitlab-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-gitter-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-gitter-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-google-chat-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-google-chat-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-http-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-http-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-java-sdk-commons-1.6.0.jar %{_appdir}/lib/jreleaser-java-sdk-commons-1.6.0.jar
+install -p -m 644 lib/jreleaser-linkedin-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-linkedin-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-logger-api-1.6.0.jar %{_appdir}/lib/jreleaser-logger-api-1.6.0.jar
+install -p -m 644 lib/jreleaser-mastodon-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-mastodon-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-mattermost-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-mattermost-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-model-api-1.6.0.jar %{_appdir}/lib/jreleaser-model-api-1.6.0.jar
+install -p -m 644 lib/jreleaser-model-impl-1.6.0.jar %{_appdir}/lib/jreleaser-model-impl-1.6.0.jar
+install -p -m 644 lib/jreleaser-nexus2-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-nexus2-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-opencollective-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-opencollective-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-resource-bundle-1.6.0.jar %{_appdir}/lib/jreleaser-resource-bundle-1.6.0.jar
+install -p -m 644 lib/jreleaser-s3-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-s3-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-sdkman-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-sdkman-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-signing-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-signing-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-slack-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-slack-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-smtp-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-smtp-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-ssh-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-ssh-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-teams-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-teams-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-telegram-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-telegram-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-templates-1.6.0.jar %{_appdir}/lib/jreleaser-templates-1.6.0.jar
+install -p -m 644 lib/jreleaser-tool-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-tool-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-twitter-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-twitter-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-utils-1.6.0.jar %{_appdir}/lib/jreleaser-utils-1.6.0.jar
+install -p -m 644 lib/jreleaser-webhooks-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-webhooks-java-sdk-1.6.0.jar
+install -p -m 644 lib/jreleaser-zulip-java-sdk-1.6.0.jar %{_appdir}/lib/jreleaser-zulip-java-sdk-1.6.0.jar
+install -p -m 644 lib/json-utils-2.20.51.jar %{_appdir}/lib/json-utils-2.20.51.jar
+install -p -m 644 lib/jsonschema-generator-4.31.0.jar %{_appdir}/lib/jsonschema-generator-4.31.0.jar
+install -p -m 644 lib/jsonschema-module-jackson-4.31.0.jar %{_appdir}/lib/jsonschema-module-jackson-4.31.0.jar
+install -p -m 644 lib/jzlib-1.1.3.jar %{_appdir}/lib/jzlib-1.1.3.jar
+install -p -m 644 lib/metrics-spi-2.20.51.jar %{_appdir}/lib/metrics-spi-2.20.51.jar
+install -p -m 644 lib/org.eclipse.jgit-5.13.0.202109080827-r.jar %{_appdir}/lib/org.eclipse.jgit-5.13.0.202109080827-r.jar
+install -p -m 644 lib/picocli-4.7.3.jar %{_appdir}/lib/picocli-4.7.3.jar
+install -p -m 644 lib/profiles-2.20.51.jar %{_appdir}/lib/profiles-2.20.51.jar
+install -p -m 644 lib/protocol-core-2.20.51.jar %{_appdir}/lib/protocol-core-2.20.51.jar
+install -p -m 644 lib/reactive-streams-1.0.3.jar %{_appdir}/lib/reactive-streams-1.0.3.jar
+install -p -m 644 lib/regions-2.20.51.jar %{_appdir}/lib/regions-2.20.51.jar
+install -p -m 644 lib/s3-2.20.51.jar %{_appdir}/lib/s3-2.20.51.jar
+install -p -m 644 lib/sdk-core-2.20.51.jar %{_appdir}/lib/sdk-core-2.20.51.jar
+install -p -m 644 lib/slf4j-api-2.0.7.jar %{_appdir}/lib/slf4j-api-2.0.7.jar
+install -p -m 644 lib/slf4j-simple-2.0.7.jar %{_appdir}/lib/slf4j-simple-2.0.7.jar
+install -p -m 644 lib/snakeyaml-1.33.jar %{_appdir}/lib/snakeyaml-1.33.jar
+install -p -m 644 lib/sshj-0.35.0.jar %{_appdir}/lib/sshj-0.35.0.jar
+install -p -m 644 lib/stax2-api-4.2.1.jar %{_appdir}/lib/stax2-api-4.2.1.jar
+install -p -m 644 lib/third-party-jackson-core-2.20.51.jar %{_appdir}/lib/third-party-jackson-core-2.20.51.jar
+install -p -m 644 lib/tika-core-2.7.0.jar %{_appdir}/lib/tika-core-2.7.0.jar
+install -p -m 644 lib/twitter4j-core-4.1.2.jar %{_appdir}/lib/twitter4j-core-4.1.2.jar
+install -p -m 644 lib/utils-2.20.51.jar %{_appdir}/lib/utils-2.20.51.jar
+install -p -m 644 lib/woodstox-core-6.5.0.jar %{_appdir}/lib/woodstox-core-6.5.0.jar
+install -p -m 644 lib/xz-1.9.jar %{_appdir}/lib/xz-1.9.jar
+install -p -m 644 lib/yamllint-1.5.0.jar %{_appdir}/lib/yamllint-1.5.0.jar
+install -p -m 644 lib/zstd-jni-1.5.4-1.jar %{_appdir}/lib/zstd-jni-1.5.4-1.jar
+install -p -m 644 licenses/LICENSE-BSD-2-Clause %{_appdir}/licenses/LICENSE-BSD-2-Clause
+install -p -m 644 licenses/LICENSE-BSD-2-Clause-FreeBSD %{_appdir}/licenses/LICENSE-BSD-2-Clause-FreeBSD
+install -p -m 644 licenses/LICENSE-Bouncy-Castle %{_appdir}/licenses/LICENSE-Bouncy-Castle
+install -p -m 644 licenses/LICENSE-CC0 %{_appdir}/licenses/LICENSE-CC0
+install -p -m 644 licenses/LICENSE-EDL-1.0 %{_appdir}/licenses/LICENSE-EDL-1.0
+install -p -m 644 licenses/LICENSE-MIT %{_appdir}/licenses/LICENSE-MIT
+install -p -m 644 licenses/LICENSE-jzlib %{_appdir}/licenses/LICENSE-jzlib
 
 %files
 %{_bindir}/%{name}
-%{_datadir}/%{name}/releaser-1.6.0/bin/jreleaser
-%{_datadir}/%{name}/releaser-1.6.0/LICENSE
-%{_datadir}/%{name}/releaser-1.6.0/NOTICE
-%{_datadir}/%{name}/releaser-1.6.0/VERSION
-%{_datadir}/%{name}/releaser-1.6.0/lib/JavaEWAH-1.2.3.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/annotations-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/apache-client-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/arns-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/asn-one-0.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/auth-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/aws-core-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/aws-query-protocol-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/aws-xml-protocol-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/bcpg-jdk15on-1.70.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/bcpkix-jdk15on-1.70.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/bcprov-jdk15on-1.70.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/bcutil-jdk15on-1.70.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/classmate-1.5.1.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/commonmark-0.21.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/commons-codec-1.15.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/commons-compress-1.22.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/commons-io-2.11.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/commons-jexl3-3.3.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/commons-lang3-3.12.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/commons-net-3.9.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/commons-text-1.10.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/compiler-0.9.10.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/crt-core-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/eddsa-0.3.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/endpoints-spi-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/eventstream-1.0.1.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/failsafe-3.3.1.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/feign-core-12.3.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/feign-form-3.8.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/feign-httpclient-12.3.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/feign-jackson-12.3.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/http-client-spi-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/httpclient-4.5.13.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/httpcore-4.4.16.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jackson-annotations-2.14.2.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jackson-core-2.14.2.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jackson-databind-2.14.2.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jackson-dataformat-toml-2.14.2.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jackson-dataformat-xml-2.14.2.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jackson-dataformat-yaml-2.14.2.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jakarta.activation-2.0.1.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jakarta.mail-2.0.1.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jcl-over-slf4j-2.0.7.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-artifactory-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-azure-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-codeberg-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-command-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-config-json-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-config-toml-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-config-yaml-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-discord-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-discourse-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-engine-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-ftp-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-genericgit-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-git-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-gitea-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-github-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-gitlab-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-gitter-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-google-chat-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-http-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-java-sdk-commons-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-linkedin-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-logger-api-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-mastodon-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-mattermost-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-model-api-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-model-impl-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-nexus2-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-opencollective-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-resource-bundle-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-s3-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-sdkman-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-signing-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-slack-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-smtp-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-ssh-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-teams-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-telegram-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-templates-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-tool-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-twitter-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-utils-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-webhooks-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jreleaser-zulip-java-sdk-1.6.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/json-utils-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jsonschema-generator-4.31.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jsonschema-module-jackson-4.31.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/jzlib-1.1.3.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/metrics-spi-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/org.eclipse.jgit-5.13.0.202109080827-r.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/picocli-4.7.3.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/profiles-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/protocol-core-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/reactive-streams-1.0.3.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/regions-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/s3-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/sdk-core-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/slf4j-api-2.0.7.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/slf4j-simple-2.0.7.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/snakeyaml-1.33.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/sshj-0.35.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/stax2-api-4.2.1.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/third-party-jackson-core-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/tika-core-2.7.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/twitter4j-core-4.1.2.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/utils-2.20.51.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/woodstox-core-6.5.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/xz-1.9.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/yamllint-1.5.0.jar
-%{_datadir}/%{name}/releaser-1.6.0/lib/zstd-jni-1.5.4-1.jar
-%{_datadir}/%{name}/releaser-1.6.0/licenses/LICENSE-BSD-2-Clause
-%{_datadir}/%{name}/releaser-1.6.0/licenses/LICENSE-BSD-2-Clause-FreeBSD
-%{_datadir}/%{name}/releaser-1.6.0/licenses/LICENSE-Bouncy-Castle
-%{_datadir}/%{name}/releaser-1.6.0/licenses/LICENSE-CC0
-%{_datadir}/%{name}/releaser-1.6.0/licenses/LICENSE-EDL-1.0
-%{_datadir}/%{name}/releaser-1.6.0/licenses/LICENSE-MIT
-%{_datadir}/%{name}/releaser-1.6.0/licenses/LICENSE-jzlib
+%{_datadir}/%{name}/bin/jreleaser
+%{_datadir}/%{name}/LICENSE
+%{_datadir}/%{name}/NOTICE
+%{_datadir}/%{name}/VERSION
+%{_datadir}/%{name}/lib/JavaEWAH-1.2.3.jar
+%{_datadir}/%{name}/lib/annotations-2.20.51.jar
+%{_datadir}/%{name}/lib/apache-client-2.20.51.jar
+%{_datadir}/%{name}/lib/arns-2.20.51.jar
+%{_datadir}/%{name}/lib/asn-one-0.6.0.jar
+%{_datadir}/%{name}/lib/auth-2.20.51.jar
+%{_datadir}/%{name}/lib/aws-core-2.20.51.jar
+%{_datadir}/%{name}/lib/aws-query-protocol-2.20.51.jar
+%{_datadir}/%{name}/lib/aws-xml-protocol-2.20.51.jar
+%{_datadir}/%{name}/lib/bcpg-jdk15on-1.70.jar
+%{_datadir}/%{name}/lib/bcpkix-jdk15on-1.70.jar
+%{_datadir}/%{name}/lib/bcprov-jdk15on-1.70.jar
+%{_datadir}/%{name}/lib/bcutil-jdk15on-1.70.jar
+%{_datadir}/%{name}/lib/classmate-1.5.1.jar
+%{_datadir}/%{name}/lib/commonmark-0.21.0.jar
+%{_datadir}/%{name}/lib/commons-codec-1.15.jar
+%{_datadir}/%{name}/lib/commons-compress-1.22.jar
+%{_datadir}/%{name}/lib/commons-io-2.11.0.jar
+%{_datadir}/%{name}/lib/commons-jexl3-3.3.jar
+%{_datadir}/%{name}/lib/commons-lang3-3.12.0.jar
+%{_datadir}/%{name}/lib/commons-net-3.9.0.jar
+%{_datadir}/%{name}/lib/commons-text-1.10.0.jar
+%{_datadir}/%{name}/lib/compiler-0.9.10.jar
+%{_datadir}/%{name}/lib/crt-core-2.20.51.jar
+%{_datadir}/%{name}/lib/eddsa-0.3.0.jar
+%{_datadir}/%{name}/lib/endpoints-spi-2.20.51.jar
+%{_datadir}/%{name}/lib/eventstream-1.0.1.jar
+%{_datadir}/%{name}/lib/failsafe-3.3.1.jar
+%{_datadir}/%{name}/lib/feign-core-12.3.jar
+%{_datadir}/%{name}/lib/feign-form-3.8.0.jar
+%{_datadir}/%{name}/lib/feign-httpclient-12.3.jar
+%{_datadir}/%{name}/lib/feign-jackson-12.3.jar
+%{_datadir}/%{name}/lib/http-client-spi-2.20.51.jar
+%{_datadir}/%{name}/lib/httpclient-4.5.13.jar
+%{_datadir}/%{name}/lib/httpcore-4.4.16.jar
+%{_datadir}/%{name}/lib/jackson-annotations-2.14.2.jar
+%{_datadir}/%{name}/lib/jackson-core-2.14.2.jar
+%{_datadir}/%{name}/lib/jackson-databind-2.14.2.jar
+%{_datadir}/%{name}/lib/jackson-dataformat-toml-2.14.2.jar
+%{_datadir}/%{name}/lib/jackson-dataformat-xml-2.14.2.jar
+%{_datadir}/%{name}/lib/jackson-dataformat-yaml-2.14.2.jar
+%{_datadir}/%{name}/lib/jakarta.activation-2.0.1.jar
+%{_datadir}/%{name}/lib/jakarta.mail-2.0.1.jar
+%{_datadir}/%{name}/lib/jcl-over-slf4j-2.0.7.jar
+%{_datadir}/%{name}/lib/jreleaser-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-artifactory-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-azure-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-codeberg-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-command-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-config-json-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-config-toml-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-config-yaml-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-discord-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-discourse-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-engine-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-ftp-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-genericgit-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-git-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-gitea-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-github-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-gitlab-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-gitter-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-google-chat-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-http-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-java-sdk-commons-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-linkedin-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-logger-api-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-mastodon-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-mattermost-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-model-api-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-model-impl-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-nexus2-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-opencollective-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-resource-bundle-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-s3-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-sdkman-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-signing-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-slack-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-smtp-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-ssh-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-teams-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-telegram-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-templates-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-tool-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-twitter-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-utils-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-webhooks-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/jreleaser-zulip-java-sdk-1.6.0.jar
+%{_datadir}/%{name}/lib/json-utils-2.20.51.jar
+%{_datadir}/%{name}/lib/jsonschema-generator-4.31.0.jar
+%{_datadir}/%{name}/lib/jsonschema-module-jackson-4.31.0.jar
+%{_datadir}/%{name}/lib/jzlib-1.1.3.jar
+%{_datadir}/%{name}/lib/metrics-spi-2.20.51.jar
+%{_datadir}/%{name}/lib/org.eclipse.jgit-5.13.0.202109080827-r.jar
+%{_datadir}/%{name}/lib/picocli-4.7.3.jar
+%{_datadir}/%{name}/lib/profiles-2.20.51.jar
+%{_datadir}/%{name}/lib/protocol-core-2.20.51.jar
+%{_datadir}/%{name}/lib/reactive-streams-1.0.3.jar
+%{_datadir}/%{name}/lib/regions-2.20.51.jar
+%{_datadir}/%{name}/lib/s3-2.20.51.jar
+%{_datadir}/%{name}/lib/sdk-core-2.20.51.jar
+%{_datadir}/%{name}/lib/slf4j-api-2.0.7.jar
+%{_datadir}/%{name}/lib/slf4j-simple-2.0.7.jar
+%{_datadir}/%{name}/lib/snakeyaml-1.33.jar
+%{_datadir}/%{name}/lib/sshj-0.35.0.jar
+%{_datadir}/%{name}/lib/stax2-api-4.2.1.jar
+%{_datadir}/%{name}/lib/third-party-jackson-core-2.20.51.jar
+%{_datadir}/%{name}/lib/tika-core-2.7.0.jar
+%{_datadir}/%{name}/lib/twitter4j-core-4.1.2.jar
+%{_datadir}/%{name}/lib/utils-2.20.51.jar
+%{_datadir}/%{name}/lib/woodstox-core-6.5.0.jar
+%{_datadir}/%{name}/lib/xz-1.9.jar
+%{_datadir}/%{name}/lib/yamllint-1.5.0.jar
+%{_datadir}/%{name}/lib/zstd-jni-1.5.4-1.jar
+%{_datadir}/%{name}/licenses/LICENSE-BSD-2-Clause
+%{_datadir}/%{name}/licenses/LICENSE-BSD-2-Clause-FreeBSD
+%{_datadir}/%{name}/licenses/LICENSE-Bouncy-Castle
+%{_datadir}/%{name}/licenses/LICENSE-CC0
+%{_datadir}/%{name}/licenses/LICENSE-EDL-1.0
+%{_datadir}/%{name}/licenses/LICENSE-MIT
+%{_datadir}/%{name}/licenses/LICENSE-jzlib
