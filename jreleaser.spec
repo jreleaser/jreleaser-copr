@@ -24,7 +24,7 @@ may be announced in a variety of channels such as Twitter, Zulip, SDKMAN!, and m
 
 
 %prep
-%setup -q -n 
+%setup -q -n jreleaser-1.6.0
 
 %install
 mkdir -p %{buildroot}%{_bindir}
