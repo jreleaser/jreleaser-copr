@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.6.0-SNAPSHOT at 2023-04-29T10:13:03.544759325Z
+# Generated with JReleaser 1.6.0 at 2023-04-29T14:32:33.786374+02:00
 Name:      jreleaser
 Version:   1.6.0
 Release:   1%{?dist}
@@ -39,7 +39,7 @@ chmod 0755 %{buildroot}%{_bindir}/jreleaser
 
 mkdir -p %{_appdir}/lib
 mkdir -p %{_appdir}/licenses
-install -p -m 755 releaser-1.6.0/bin/jreleaser %{_appdir}/bin/jreleaser
+install -p -m 755 bin/jreleaser %{_appdir}/bin/jreleaser
 install -p -m 644 LICENSE %{_appdir}/LICENSE
 install -p -m 644 NOTICE %{_appdir}/NOTICE
 install -p -m 644 VERSION %{_appdir}/VERSION
