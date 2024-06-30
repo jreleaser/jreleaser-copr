@@ -1,12 +1,12 @@
-# Generated with JReleaser 1.13.0-SNAPSHOT at 2024-06-30T10:12:21.291523965Z
+# Generated with JReleaser 1.14.0-SNAPSHOT at 2024-06-30T13:00:04.112802098Z
 Name:      jreleaser
-Version:   1.13.0
+Version:   1.13.1
 Release:   1%{?dist}
 Summary:   Release projects quickly and easily with JReleaser
 
 License:   Apache-2.0
 URL:       https://jreleaser.org
-Source0:   https://github.com/jreleaser/jreleaser/releases/download/v1.13.0/jreleaser-1.13.0.tar
+Source0:   https://github.com/jreleaser/jreleaser/releases/download/v1.13.1/jreleaser-1.13.1.tar
 
 BuildArch: noarch
 Requires:  java
@@ -24,7 +24,7 @@ may be announced in a variety of channels such as Twitter, Zulip, SDKMAN!, and m
 
 
 %prep
-%setup -q -n jreleaser-1.13.0
+%setup -q -n jreleaser-1.13.1
 
 %install
 mkdir -p %{buildroot}%{_bindir}
@@ -97,52 +97,52 @@ install -p -m 644 lib/jackson-datatype-jsr310-2.17.1.jar %{_appdir}/lib/jackson-
 install -p -m 644 lib/jakarta.activation-2.0.1.jar %{_appdir}/lib/jakarta.activation-2.0.1.jar
 install -p -m 644 lib/jakarta.mail-2.0.1.jar %{_appdir}/lib/jakarta.mail-2.0.1.jar
 install -p -m 644 lib/jcl-over-slf4j-2.0.13.jar %{_appdir}/lib/jcl-over-slf4j-2.0.13.jar
-install -p -m 644 lib/jreleaser-1.13.0.jar %{_appdir}/lib/jreleaser-1.13.0.jar
-install -p -m 644 lib/jreleaser-artifactory-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-artifactory-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-azure-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-azure-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-bluesky-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-bluesky-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-codeberg-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-codeberg-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-command-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-command-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-config-json-1.13.0.jar %{_appdir}/lib/jreleaser-config-json-1.13.0.jar
-install -p -m 644 lib/jreleaser-config-toml-1.13.0.jar %{_appdir}/lib/jreleaser-config-toml-1.13.0.jar
-install -p -m 644 lib/jreleaser-config-yaml-1.13.0.jar %{_appdir}/lib/jreleaser-config-yaml-1.13.0.jar
-install -p -m 644 lib/jreleaser-discord-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-discord-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-discourse-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-discourse-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-engine-1.13.0.jar %{_appdir}/lib/jreleaser-engine-1.13.0.jar
-install -p -m 644 lib/jreleaser-ftp-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-ftp-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-genericgit-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-genericgit-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-git-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-git-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-gitea-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-gitea-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-github-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-github-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-gitlab-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-gitlab-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-gitter-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-gitter-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-google-chat-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-google-chat-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-http-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-http-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-java-sdk-commons-1.13.0.jar %{_appdir}/lib/jreleaser-java-sdk-commons-1.13.0.jar
-install -p -m 644 lib/jreleaser-linkedin-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-linkedin-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-logger-api-1.13.0.jar %{_appdir}/lib/jreleaser-logger-api-1.13.0.jar
-install -p -m 644 lib/jreleaser-mastodon-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-mastodon-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-mattermost-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-mattermost-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-mavencentral-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-mavencentral-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-model-api-1.13.0.jar %{_appdir}/lib/jreleaser-model-api-1.13.0.jar
-install -p -m 644 lib/jreleaser-model-impl-1.13.0.jar %{_appdir}/lib/jreleaser-model-impl-1.13.0.jar
-install -p -m 644 lib/jreleaser-nexus2-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-nexus2-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-opencollective-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-opencollective-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-resource-bundle-1.13.0.jar %{_appdir}/lib/jreleaser-resource-bundle-1.13.0.jar
-install -p -m 644 lib/jreleaser-s3-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-s3-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-sdkman-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-sdkman-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-signing-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-signing-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-slack-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-slack-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-smtp-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-smtp-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-ssh-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-ssh-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-teams-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-teams-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-telegram-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-telegram-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-templates-1.13.0.jar %{_appdir}/lib/jreleaser-templates-1.13.0.jar
-install -p -m 644 lib/jreleaser-tool-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-tool-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-twitter-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-twitter-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-utils-1.13.0.jar %{_appdir}/lib/jreleaser-utils-1.13.0.jar
-install -p -m 644 lib/jreleaser-webhooks-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-webhooks-java-sdk-1.13.0.jar
-install -p -m 644 lib/jreleaser-zulip-java-sdk-1.13.0.jar %{_appdir}/lib/jreleaser-zulip-java-sdk-1.13.0.jar
+install -p -m 644 lib/jreleaser-1.13.1.jar %{_appdir}/lib/jreleaser-1.13.1.jar
+install -p -m 644 lib/jreleaser-artifactory-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-artifactory-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-azure-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-azure-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-bluesky-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-bluesky-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-codeberg-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-codeberg-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-command-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-command-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-config-json-1.13.1.jar %{_appdir}/lib/jreleaser-config-json-1.13.1.jar
+install -p -m 644 lib/jreleaser-config-toml-1.13.1.jar %{_appdir}/lib/jreleaser-config-toml-1.13.1.jar
+install -p -m 644 lib/jreleaser-config-yaml-1.13.1.jar %{_appdir}/lib/jreleaser-config-yaml-1.13.1.jar
+install -p -m 644 lib/jreleaser-discord-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-discord-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-discourse-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-discourse-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-engine-1.13.1.jar %{_appdir}/lib/jreleaser-engine-1.13.1.jar
+install -p -m 644 lib/jreleaser-ftp-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-ftp-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-genericgit-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-genericgit-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-git-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-git-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-gitea-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-gitea-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-github-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-github-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-gitlab-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-gitlab-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-gitter-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-gitter-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-google-chat-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-google-chat-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-http-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-http-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-java-sdk-commons-1.13.1.jar %{_appdir}/lib/jreleaser-java-sdk-commons-1.13.1.jar
+install -p -m 644 lib/jreleaser-linkedin-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-linkedin-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-logger-api-1.13.1.jar %{_appdir}/lib/jreleaser-logger-api-1.13.1.jar
+install -p -m 644 lib/jreleaser-mastodon-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-mastodon-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-mattermost-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-mattermost-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-mavencentral-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-mavencentral-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-model-api-1.13.1.jar %{_appdir}/lib/jreleaser-model-api-1.13.1.jar
+install -p -m 644 lib/jreleaser-model-impl-1.13.1.jar %{_appdir}/lib/jreleaser-model-impl-1.13.1.jar
+install -p -m 644 lib/jreleaser-nexus2-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-nexus2-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-opencollective-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-opencollective-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-resource-bundle-1.13.1.jar %{_appdir}/lib/jreleaser-resource-bundle-1.13.1.jar
+install -p -m 644 lib/jreleaser-s3-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-s3-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-sdkman-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-sdkman-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-signing-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-signing-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-slack-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-slack-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-smtp-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-smtp-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-ssh-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-ssh-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-teams-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-teams-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-telegram-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-telegram-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-templates-1.13.1.jar %{_appdir}/lib/jreleaser-templates-1.13.1.jar
+install -p -m 644 lib/jreleaser-tool-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-tool-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-twitter-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-twitter-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-utils-1.13.1.jar %{_appdir}/lib/jreleaser-utils-1.13.1.jar
+install -p -m 644 lib/jreleaser-webhooks-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-webhooks-java-sdk-1.13.1.jar
+install -p -m 644 lib/jreleaser-zulip-java-sdk-1.13.1.jar %{_appdir}/lib/jreleaser-zulip-java-sdk-1.13.1.jar
 install -p -m 644 lib/json-utils-2.26.10.jar %{_appdir}/lib/json-utils-2.26.10.jar
 install -p -m 644 lib/jsonschema-generator-4.35.0.jar %{_appdir}/lib/jsonschema-generator-4.35.0.jar
 install -p -m 644 lib/jsonschema-module-jackson-4.35.0.jar %{_appdir}/lib/jsonschema-module-jackson-4.35.0.jar
@@ -237,52 +237,52 @@ install -p -m 644 licenses/LICENSE-jzlib %{_appdir}/licenses/LICENSE-jzlib
 %{_datadir}/%{name}/lib/jakarta.activation-2.0.1.jar
 %{_datadir}/%{name}/lib/jakarta.mail-2.0.1.jar
 %{_datadir}/%{name}/lib/jcl-over-slf4j-2.0.13.jar
-%{_datadir}/%{name}/lib/jreleaser-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-artifactory-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-azure-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-bluesky-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-codeberg-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-command-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-config-json-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-config-toml-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-config-yaml-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-discord-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-discourse-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-engine-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-ftp-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-genericgit-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-git-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-gitea-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-github-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-gitlab-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-gitter-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-google-chat-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-http-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-java-sdk-commons-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-linkedin-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-logger-api-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-mastodon-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-mattermost-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-mavencentral-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-model-api-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-model-impl-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-nexus2-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-opencollective-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-resource-bundle-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-s3-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-sdkman-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-signing-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-slack-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-smtp-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-ssh-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-teams-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-telegram-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-templates-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-tool-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-twitter-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-utils-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-webhooks-java-sdk-1.13.0.jar
-%{_datadir}/%{name}/lib/jreleaser-zulip-java-sdk-1.13.0.jar
+%{_datadir}/%{name}/lib/jreleaser-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-artifactory-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-azure-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-bluesky-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-codeberg-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-command-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-config-json-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-config-toml-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-config-yaml-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-discord-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-discourse-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-engine-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-ftp-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-genericgit-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-git-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-gitea-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-github-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-gitlab-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-gitter-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-google-chat-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-http-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-java-sdk-commons-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-linkedin-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-logger-api-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-mastodon-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-mattermost-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-mavencentral-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-model-api-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-model-impl-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-nexus2-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-opencollective-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-resource-bundle-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-s3-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-sdkman-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-signing-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-slack-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-smtp-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-ssh-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-teams-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-telegram-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-templates-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-tool-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-twitter-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-utils-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-webhooks-java-sdk-1.13.1.jar
+%{_datadir}/%{name}/lib/jreleaser-zulip-java-sdk-1.13.1.jar
 %{_datadir}/%{name}/lib/json-utils-2.26.10.jar
 %{_datadir}/%{name}/lib/jsonschema-generator-4.35.0.jar
 %{_datadir}/%{name}/lib/jsonschema-module-jackson-4.35.0.jar
